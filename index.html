@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Darling Riots | Official Site</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+
+  <!-- LOADING OVERLAY (shown whenever the page or an action is loading) -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <img src="pictures/dogdrum.png" alt="Loading..." class="loading-spinner">
+  </div>
+
+  <!-- BACKGROUND GRID TEXTURE OVERLAY -->
+  <div class="grid-overlay"></div>
+
+  <!-- BAND INTRO MEMO: old-school ticket stub, pinned to the left edge -->
+  <div class="ticket-memo" id="ticketMemo">
+    <button type="button" class="ticket-tab" id="ticketTab" aria-expanded="false" aria-controls="ticketPanel">
+      <span class="ticket-tab-text">About Us</span>
+    </button>
+
+    <div class="ticket-panel" id="ticketPanel">
+      <div class="ticket-stub">
+        <span class="ticket-stub-label">ADMIT<br>ONE</span>
+        <span class="ticket-stub-no">NO. 000001</span>
+      </div>
+      <div class="ticket-perforation"></div>
+      <div class="ticket-body">
+        <button type="button" class="ticket-close" id="ticketClose" aria-label="Close">&times;</button>
+        <span class="ticket-eyebrow">BACKSTAGE PASS // ORIGIN STORY</span>
+        <h2 class="ticket-title">THE DARLING RIOTS</h2>
+        <p class="ticket-intro-text">
+          [ Add your band introduction here — who you are, where you're from, your sound, and the story
+          behind the riot. This panel is ready whenever you want to drop it in. ]
+        </p>
+        <div class="ticket-meta-row">
+          <span>GATE A1</span>
+          <span>GA ENTRY</span>
+          <span>VALID ALL DATES</span>
+        </div>
+        <div class="ticket-barcode"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER (Inspired by Layout in Screenshot 2026-05-30 205433.png) -->
+  <header class="y2k-header">
+    <div class="top-utility-bar">
+      <div class="social-cluster">
+        <a href="https://on.soundcloud.com/zNSpr5224gGfSf9cgE" target="_blank" rel="noopener noreferrer" class="pixel-social-btn" title="SoundCloud" aria-label="SoundCloud">
+          <svg viewBox="0 0 640 512" aria-hidden="true"><path d="M111.4 256.3c-3.5 0-6.1 2.7-6.6 6.1c-3.3 26-8.4 50.7-13.4 74.9l-.2 1.3c.5 3.9 3.1 6.7 6.6 6.7s6.1-2.7 6.7-6.7l.1-.6c5.2-24.9 10.4-49.9 13.7-76.5c-.6-3.4-3.1-5.2-6.9-5.2zM63.8 285.3c-3.4 0-6.4 2.7-6.7 6.4c-2.5 18-6.4 35.6-9.9 53.2l-.5 2.6c.3 3.9 3.1 6.4 6.4 6.4c3.4 0 6.1-2.5 6.7-6.4l.1-.4c3.9-19 7.7-38 10.1-57.6c-.4-2.5-2.9-3.8-6.2-3.8zM160.5 202.8c-4.4 0-7.9 3.4-8.4 7.9c-4.2 39.5-11.4 78.4-16.4 117.9c.5 5.2 4.1 8.9 8.9 8.9s8.1-3.4 8.4-8.9c5.4-40.9 12.9-81.9 16.6-123.1c-.2-1.5-.4-3-.6-4.4c-1-4.1-3.9-8.3-8.5-8.3zM227 176.8c-.2 0-.5 0-.7 0c-5.2 0-9.6 4.4-9.9 9.4c-4.2 41.5-9.6 82.4-14.4 123.8c-.2 1.2-.2 2.5-.2 3.7c0 5.7 4.5 9.9 9.9 9.9c5.2 0 9.4-3.9 9.9-9.4c5.2-42.4 10.7-84.9 14.9-127.3c0-.5-.2-1-.2-1.7c-.2-4.9-4.4-8.9-9.3-9.4zM31.9 300.1c-3.5 0-6.6 2.7-6.9 6.4l-3.9 40.3c.2 3.9 3.1 6.4 6.6 6.4c3.5 0 6.4-2.9 6.9-6.4l3.7-40.3c-.5-3.7-3.4-6.4-6.4-6.4zM587 224.9c-6.4 0-12.4 1.2-18 3.2C562.9 154.6 505.6 100 435.9 100c-17.3 0-34.1 3.5-49 9.4c-6.1 2.5-7.6 4.9-7.6 9.6l0 268.7c0 4.9 3.9 8.9 8.7 9.4l199 0c39.5 0 71.9-32.1 71.9-71.9C658.8 257.1 626.6 224.9 587 224.9zM294.4 176.3c-6.2 0-11.4 4.9-11.9 11.2c-4.5 43.9-10.2 87.7-13.9 131.6c0 .5-.2 1.2-.2 1.7c0 6.4 5.2 11.2 11.4 11.2c6.2 0 11.2-4.7 11.7-11.2c4-44.2 10-88.1 14.2-132.3c-.2-6.5-5.1-12.2-11.3-12.2z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/thedarlingriots?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" class="pixel-social-btn" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.332.014 7.052.072 2.694.272.273 2.69.073 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.332 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@darlingriots" target="_blank" rel="noopener noreferrer" class="pixel-social-btn" title="YouTube" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a2.997 2.997 0 0 0-2.112-2.12C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.386.521A2.997 2.997 0 0 0 .502 6.186 31.26 31.26 0 0 0 0 12a31.26 31.26 0 0 0 .502 5.814 2.997 2.997 0 0 0 2.112 2.12c1.881.521 9.386.521 9.386.521s7.505 0 9.386-.521a2.997 2.997 0 0 0 2.112-2.12A31.26 31.26 0 0 0 24 12a31.26 31.26 0 0 0-.502-5.814zM9.75 15.568V8.432L15.818 12z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@thedarlingriots?lang=en-GB" target="_blank" rel="noopener noreferrer" class="pixel-social-btn" title="TikTok" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 0h-3.4v15.5c0 1.7-1.4 3.2-3.2 3.2-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2.3 0 .6 0 .9.1V8.9c-.3 0-.6-.1-.9-.1-3.6 0-6.5 2.9-6.5 6.5S6.5 21.8 10 21.8s6.5-2.9 6.5-6.5V7.9c1.4 1 3.1 1.6 4.9 1.6V6.1c-2.6 0-4.8-2.1-4.8-4.8V0z"/></svg>
+        </a>
+      </div>
+      <div class="parental-advisory-badge">
+        PARENTAL<br>ADVISORY<br><span class="explicit">EXPLICIT CONTENT</span>
+      </div>
+    </div>
+    
+    <img src="logo.png" alt="The Darling Riots" class="band-logo" id="bandLogo">
+    
+    <nav class="cyber-nav-container">
+      <div class="cyber-nav-skew">
+        <a href="#news" class="nav-link">RIOT NEWS</a>
+        <a href="#tour" class="nav-link">TOUR DATES</a>
+        <a href="drops.html#shop" class="nav-link">DROP SHOP</a>
+        <a href="drops.html#vault" class="nav-link">THE VAULT</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO EXPLOSIVE SPLASH & FAN ZONE -->
+  <section class="hero-section">
+    <div class="hero-media-frame">
+      <img src="pictures/poster.png" alt="The Darling Riots — Raimie, Nick, Mika, Isaac" class="hero-poster">
+    </div>
+
+    <div class="hero-fan-widgets">
+      <!-- WINAMP STYLE AUDIO PLAYER -->
+      <div class="winamp-player" id="winampPlayer">
+        <div class="winamp-title-bar">
+          <span class="winamp-title-text">WINAMP 2.66 - RIOT_PLAYER.EXE</span>
+          <div class="winamp-window-controls"><span>_</span><span>[]</span><span>X</span></div>
+        </div>
+        <div class="winamp-display">
+          <div class="winamp-status-indicators">
+            <div class="status-indicator" id="playStatus">PAUSE</div>
+            <div class="status-kbps">192kbps</div>
+            <div class="status-khz">44kHz</div>
+          </div>
+          <div class="winamp-timer" id="audioTimer">00:00</div>
+          <div class="winamp-track-info">
+            <div class="track-ticker-wrap">
+              <div class="track-ticker" id="trackTitle">1. The Darling Riots - Riot Act.mp3</div>
+            </div>
+          </div>
+        </div>
+        <div class="winamp-progress-container" id="progressContainer">
+          <div class="winamp-progress-bar" id="progressBar"></div>
+        </div>
+        <div class="winamp-controls">
+          <button class="winamp-btn" id="prevBtn">|&lt;&lt;</button>
+          <button class="winamp-btn active-green" id="playBtn">&gt;</button>
+          <button class="winamp-btn" id="pauseBtn">||</button>
+          <button class="winamp-btn" id="nextBtn">&gt;&gt;|</button>
+        </div>
+      </div>
+
+      <!-- SQUAD FLYER NEWSLETTER SIGNUP -->
+      <div class="street-flyer-signup">
+        <h2 class="flyer-title">BE APART OF A RIOT</h2>
+        <p class="flyer-text">DROP YOUR DETAILS BELOW FOR EXCLUSIVE MIXTAPE SNIPPETS, FREE STREET MERCH, AND SECRETS FROM THE VAULT.</p>
+        <form class="flyer-form" id="flyerForm">
+          <input type="email" placeholder="YOUR_EMAIL@CYBER.COM" required class="flyer-input">
+          <button type="submit" class="flyer-submit-btn">SUBMIT TO VAULT</button>
+        </form>
+        <p class="flyer-contact">CALL / TEXT: <a href="tel:01117993974" class="flyer-contact-link">011-1799 3974</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS & FAN ACTION ITEMS (4-Column Layout from Screenshot 2026-05-30 205459.png) -->
+  <main class="news-section" id="news">
+    <div class="section-divider">
+      <span class="divider-line"></span>
+      <h2 class="section-header-tag">THE LATEST DROP ITEMS // CRITICAL UPDATES</h2>
+      <span class="divider-line"></span>
+    </div>
+
+    <div class="news-grid">
+      <!-- ARTICLE 1: MIXTAPE DROP -->
+      <article class="jewel-case">
+        <div class="dossier-header">
+          <span class="dossier-tag">FILE // 07.03.2026</span>
+          <span class="dossier-dots">&#9679; &#9679; &#9679;</span>
+        </div>
+        <div class="case-front">
+          <div class="dossier-main">
+            <div class="album-art-wrapper">
+              <div class="art-placeholder mixtapedrop-art"></div>
+              <div class="plastic-shine"></div>
+            </div>
+            <div class="dossier-meta">
+              <div class="meta-row"><span class="meta-label">TYPE</span><span class="meta-value">MIXTAPE DROP</span></div>
+              <div class="meta-row"><span class="meta-label">STATUS</span><span class="meta-value">LIVE</span></div>
+            </div>
+          </div>
+          <div class="case-insert-text">
+            <h3>RIOT MIXTAPE VOL. 1</h3>
+            <p>The underground tape is officially live. Hit the link to grab limited heavy metallic neon green vinyl copies before they vanish back underground.</p>
+            <a href="#" class="tape-strip-btn">STREAM NOW...</a>
+          </div>
+          <div class="dossier-scanline"></div>
+        </div>
+      </article>
+
+      <!-- ARTICLE 2: TOUR DATES -->
+      <article class="jewel-case" id="tour">
+        <div class="dossier-header">
+          <span class="dossier-tag">FILE // 07.15.2026</span>
+          <span class="dossier-dots">&#9679; &#9679; &#9679;</span>
+        </div>
+        <div class="case-front">
+          <div class="dossier-main">
+            <div class="album-art-wrapper">
+              <div class="art-placeholder tour-art"></div>
+              <div class="plastic-shine"></div>
+            </div>
+            <div class="dossier-meta">
+              <div class="meta-row"><span class="meta-label">TYPE</span><span class="meta-value">TOUR DATES</span></div>
+              <div class="meta-row"><span class="meta-label">STATUS</span><span class="meta-value">OPEN</span></div>
+            </div>
+          </div>
+          <div class="case-insert-text">
+            <h3>CYBER STREETS TOUR</h3>
+            <p>We are breaking out across the East Coast dates starting next month. Tickets go live directly to the Riot Squad fan club first. Set your clocks.</p>
+            <a href="#" class="tape-strip-btn">GET TICKETS...</a>
+          </div>
+          <div class="dossier-scanline"></div>
+        </div>
+      </article>
+
+      <!-- MORE DROPS: links out to the second page -->
+      <article class="jewel-case more-tile">
+        <div class="dossier-header">
+          <span class="dossier-tag">ARCHIVE // 2 FILES</span>
+          <span class="dossier-dots">&#9679; &#9679; &#9679;</span>
+        </div>
+        <a href="drops.html" class="more-tile-link">
+          <span class="more-tile-plus">+</span>
+          <span class="more-tile-text">MORE DROPS<br>DROP SHOP // THE VAULT</span>
+          <span class="more-tile-arrow">&rarr;</span>
+        </a>
+        <div class="dossier-scanline"></div>
+      </article>
+    </div>
+  </main>
+
+  <!-- VISUAL RIOT LOG / PHOTO GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-divider">
+      <span class="divider-line"></span>
+      <h2 class="section-header-tag">VISUAL RIOT LOG // PHOTO DUMP</h2>
+      <span class="divider-line"></span>
+    </div>
+
+    <div class="photo-gallery" id="photoGallery"></div>
+  </section>
+
+  <script src="gallery-data.js"></script>
+</body>
+</html>
