@@ -192,6 +192,7 @@
         img.src = photo.src;
         img.alt = photo.caption || "";
         img.className = "gallery-photo";
+        if (photo.position) img.style.objectPosition = photo.position;
         frame.appendChild(img);
 
         if (photo.caption) {

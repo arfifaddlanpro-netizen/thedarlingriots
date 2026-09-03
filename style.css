@@ -202,11 +202,13 @@ body {
   padding: 30px 20px 25px;
   border-bottom: 3px double #00ff66;
   background:
-    radial-gradient(ellipse at 25% 45%, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.7) 100%),
-    linear-gradient(180deg, rgba(5, 5, 5, 0.25) 0%, rgba(5, 5, 5, 0.35) 55%, #070707 100%),
-    url("pictures/band-01.png");
-  background-size: cover;
-  background-position: center;
+    radial-gradient(ellipse at 25% 45%, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.55) 100%),
+    linear-gradient(180deg, rgba(5, 5, 5, 0.1) 0%, rgba(5, 5, 5, 0.2) 55%, #070707 100%),
+    url("pictures/newest header.png");
+  background-size: 100%;
+  background-position: 25% center;
+  background-repeat: no-repeat;
+  background-color: #070707;
   text-align: center;
 }
 
@@ -258,6 +260,7 @@ body {
   letter-spacing: 0.5px;
   text-align: center;
   animation: flashAlert 2s infinite steps(2);
+  transform: translate(20px, -12px) scale(0.85);
 }
 
 .parental-advisory-badge .explicit {
@@ -275,7 +278,7 @@ body {
   width: clamp(160px, 20vw, 300px);
   margin: 25px auto;
   position: relative;
-  left: clamp(-190px, -17vw, -100px);
+  left: clamp(-260px, -24vw, -160px);
   cursor: pointer;
   filter:
     drop-shadow(0 0 1px #ff6666)
@@ -716,6 +719,7 @@ body {
 .tour-art { background: linear-gradient(135deg, #ff0055, #000); }
 .merch-art { background: linear-gradient(135deg, #0088ff, #000); }
 .street-art { background: linear-gradient(135deg, #ffaa00, #000); }
+.vault-art { background: linear-gradient(135deg, #ff0055, #000); }
 
 /* Transparent Gloss Reflection Layer */
 .plastic-shine {
@@ -784,6 +788,31 @@ body {
   margin-bottom: 20px;
   height: 75px;
   overflow: hidden;
+}
+
+.feed-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.feed-tile {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, rgba(255, 0, 85, 0.15), rgba(0, 0, 0, 0.6));
+  border: 1px dashed rgba(255, 0, 0, 0.4);
+  animation: feedPulse 1.8s ease-in-out infinite;
+}
+
+.feed-tile:nth-child(2) { animation-delay: 0.2s; }
+.feed-tile:nth-child(3) { animation-delay: 0.4s; }
+.feed-tile:nth-child(4) { animation-delay: 0.6s; }
+.feed-tile:nth-child(5) { animation-delay: 0.8s; }
+.feed-tile:nth-child(6) { animation-delay: 1s; }
+
+@keyframes feedPulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.9; }
 }
 
 /* "More Drops" Link Tile (points to drops.html) */
@@ -997,10 +1026,39 @@ body {
   .band-logo {
     left: 0;
   }
+  .ticket-memo {
+    align-items: center;
+  }
+  .ticket-tab {
+    width: 13px;
+    padding: 6px 0;
+  }
+  .ticket-tab-text {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .ticket-stub {
+    width: 30px;
+    padding: 12px 0;
+  }
+  .ticket-stub-label {
+    font-size: 11px;
+  }
+  .ticket-stub-no {
+    font-size: 8px;
+  }
   .ticket-panel.open {
-    width: min(300px, calc(100vw - 42px));
+    width: min(260px, calc(100vw - 13px));
   }
   .ticket-body {
     min-width: 0;
+    padding: 20px 16px 16px;
+    gap: 8px;
+  }
+  .ticket-title {
+    font-size: 20px;
+  }
+  .ticket-intro-text {
+    font-size: 11px;
   }
 }
